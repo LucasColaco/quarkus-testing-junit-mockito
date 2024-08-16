@@ -174,6 +174,8 @@ class MovieResourceTestIT {
   @Test
   @Order(5)
   void deleteById() {
+    Long id = 1L;
+
      given()
       .when()
       .delete("/movies/" + id)
